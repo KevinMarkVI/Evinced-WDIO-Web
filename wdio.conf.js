@@ -7,6 +7,8 @@ exports.config = {
     // ====================
     //
     //
+    user: 'BS_USERNAME',
+    key: 'BS_KEY',
     // ==================
     // Specify Test Files
     // ==================
@@ -114,7 +116,7 @@ exports.config = {
     // commands. Instead, they hook themselves up into the test process.
     services: [
         [Evinced.WdioService],
-        'chromedriver',
+        ['browserstack'],
     ],
 
     // Framework you want to run your specs with.
